@@ -6,10 +6,21 @@
         <title>Site Articles</title>
     	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
     	<link href='http://fonts.googleapis.com/css?family=Raleway:300,200,100' rel='stylesheet' type='text/css'>
+        <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type='text/css'>
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    	<!--[if lt IE 9]>
+    	  <script src="../../assets/js/html5shiv.js"></script>
+    	  <script src="../../assets/js/respond.min.js"></script>
+    	<![endif]-->
+        <link href="css/style.css" rel='stylesheet' type="text/css">
     </head>
     <body>
-        <data ui-view></data>
-
+        <div id="cl-wrapper">
+            <div class="container-fluid" id="pcont">
+                <data ui-view></data>
+            </div>
+        </div>
         <!-- Angular -->
         <script src="vendor/angular/angular.min.js"></script>
         <script src="vendor/angular-resource/angular-resource.js"></script>
