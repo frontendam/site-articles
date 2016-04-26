@@ -2,5 +2,14 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "site": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "site-article",
+    "password": "ewq321@",
+    "name": "site",
+    "user": "root",
+    "connector": "mysql"
   }
 }
