@@ -4,6 +4,11 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,$url
                 url: '/home',
                 templateUrl: 'views/article/article.html'
             })
+            .state('login', {
+              url: '/signup',
+              templateUrl: 'views/login/signup.html',
+              controller: 'ControllerLoginSigup'
+            })
             .state('categories', {
               url: '/categories',
               templateUrl:  'views/categories/categories.html',
