@@ -31,5 +31,29 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Artigo": {
+    "dataSource": "site",
+    "public": true
+  },
+  "ArtigoCategoria": {
+    "dataSource": "site",
+    "public": true
+  },
+  "Categoria": {
+    "dataSource": "site",
+    "public": true
+  },
+  "Contador": {
+    "dataSource": "site",
+    "public": true
+  },
+  "Imagem": {
+    "dataSource": "site",
+    "public": true
+  },
+  "Usuario": {
+    "dataSource": "site",
+    "public": true
   }
 }
