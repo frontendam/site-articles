@@ -1,1 +1,23 @@
-<h1>Hello Update</h1>
+<div style="margin: 10px 0px;">
+  <div class="col-xs-10" style="padding-top: 10px;">
+    <h1>Update Category</h1>
+  </div>
+  <div class="col-xs-2" style="padding-top: 15px;">
+  </div>
+</div>
+<div style="margin: 10px 0px;">
+  <form ng-submit="update()" role="category" method="post">
+    <div class="col-sm-12">
+      <div class="form-group">
+        <label for="category">Category</label>
+        <input class="form-control" id="category" type="text" ng-model="category.nome">
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div style="float: right;">
+        <a class="btn btn-default" href="#/categories">Cancel</a>
+        <button type="submit" class="btn btn-primary">Update</button>
+      </div>
+    </div>
+  </form>
+</div>

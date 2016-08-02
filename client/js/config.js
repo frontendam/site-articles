@@ -6,15 +6,18 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,$url
             })
             .state('categories', {
               url: '/categories',
-              templateUrl:  'views/categories/categories.html'
+              templateUrl:  'views/categories/categories.html',
+              controller: 'ControllerCategoryList'
             })
             .state('categories-new', {
               url: '/categories/new',
-              templateUrl: 'views/categories/new.html'
+              templateUrl: 'views/categories/new.html',
+              controller: 'ControllerCategoryNew'
             })
             .state('categories-update', {
-              url: '/categories/update',
-              templateUrl: 'views/categories/update.html'
+              url: '/categories/update/{id}',
+              templateUrl: 'views/categories/update.html',
+              controller: 'ControllerCategoryUpdate'
             });
         $urlRouterProvider.otherwise('home');
     }]);

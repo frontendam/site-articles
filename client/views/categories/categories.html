@@ -6,6 +6,51 @@
     <a href="#/categories/new" type="button" class="btn btn-default" aria-label="Right Align" style="float: right;">
       <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
     </a>
-    <hr>
+  </div>
+</div>
+<div style="margin: 10px 0px;">
+  <div class="col-xs-12" style="padding-top: 10px;">
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <td style="font-weight: bold;">#</td>
+            <td style="font-weight: bold;">Nome</td>
+            <td style="width: 100px;"></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="category in categories">
+            <td>{{category.id}}</td>
+            <td>{{category.nome}}</td>
+            <td>
+              <a href="#/categories/update/{{category.id}}" class="btn btn-default">
+                <span class="glyphicon glyphicon-pencil"></span>
+              </a>
+              <button class="btn btn-default" ng-click="modal_delete(category.id)" data-toggle="modal" data-target="#modal_delete">
+                <span class="glyphicon glyphicon-trash"></span>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div id="modal_delete" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Delete</h4>
+      </div>
+      <div class="modal-body">
+        <p>Do you have sure?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="delete(id_delete)">Yes, I do</button>
+      </div>
+    </div>
   </div>
 </div>
